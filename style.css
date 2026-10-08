@@ -7,16 +7,17 @@ header {
   padding: 20px;
 }
 
-.avatar {
+header img, .avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%; 
-  object-fit: cover;   
+  object-fit: cover;
+  display: block;
 }
 
 .site-title {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 700;
   color: #333333;
   margin: 0;
