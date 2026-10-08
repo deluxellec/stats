@@ -3,15 +3,16 @@
 header {
   display: flex;
   align-items: center; 
-  gap: 2rem;           
+  gap: 24px;           
   padding: 20px;
-  width: 100%
 }
 
 .avatar {
   width: 300px;
   height: 300px;
   min-width: 300px;
+  min-height: 300px;
+  flex-shrink: 0;
   border-radius: 50%; 
   object-fit: cover;
   display: block;
@@ -19,9 +20,10 @@ header {
 
 .site-title {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 3rem;
+  font-size: 40px;
   font-weight: 700;
   color: #333333;
   margin: 0
   white-space: nowrap;
+  flex-shrink: 0;
 }
