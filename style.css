@@ -26,7 +26,7 @@ header {
   display: flex;
   align-items: center; 
   justify-content: center;
-  gap: 24px;           
+  gap: 40px;           
   padding: 20px;       
   height: auto;        
   max-width: none;
@@ -45,7 +45,7 @@ header {
 
 .site-title {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   color: #ffffff;
   margin: 0;            
