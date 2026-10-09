@@ -3,9 +3,6 @@
 html, body {
   min-height: 100vh;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;     
 }
 
 .background {
@@ -20,16 +17,30 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  filter: blur(calc(clamp(0, var(--scroll, 0), 1) * 12px));
+  transform: translate(var(--tx, 0px), var(--ty, 0px));
+  will-change: filter, transform;
+}
+
+.page-one {
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 
 header {
+  position: sticky;
+  top: 0;
+  height: 100vh;
   display: flex;
   align-items: center; 
   justify-content: center;
   gap: 40px;           
   padding: 20px;       
-  height: auto;        
   max-width: none;
+  box-sizing: border-box;
+  opacity: calc(1 - clamp(0, var(--scroll, 0), 1));
 }
 
 .avatar {
@@ -48,7 +59,7 @@ header {
   font-size: 40px;
   font-weight: 700;
   color: #ffffff;
-  margin: 0;            
+  margin: 0;           
   white-space: nowrap;
   flex-shrink: 0;
 }
