@@ -34,7 +34,6 @@ function createCustomScrollbar() {
     thumb.style.height = `${thumbHeightPct}%`;
 
     const scrollRatio = root.scrollTop / maxScroll;
-    const maxThumbTranslate = 100 - (thumbHeightPct / (track.clientHeight / track.clientHeight) * 100);
     const translateY = (scrollRatio * (track.clientHeight - thumb.clientHeight));
 
     thumb.style.transform = `translateY(${translateY}px)`;
